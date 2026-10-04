@@ -1,0 +1,1 @@
+Actividad: Carga de archivos en GHCi. Aqui esta mi evidencia de la carga del archivo ".hs" ![Evidencia](miterminal.png)
