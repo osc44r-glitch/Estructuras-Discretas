@@ -5,3 +5,13 @@ Es decir, que Num solo dicta las reglas generales para poder sumar o multiplicar
 
 ![Ejemplo de la diferenica en ghci](cappruebanumvsint.png)
 
+
+
+Objetivo de la práctica
+Aplicar los fundamentos de la programación funcional en Haskell, utilizando la separación de código en módulos, condicionales lógicas y listas por comprensión para resolver problemas matemáticos y financieros.
+
+Tiempo requerido: 1 dia
+
+Ejercicio favorito: El ejercicio de calculo de los Cetes.
+
+Comentarios: Aún me cuesta un poco de trabajo mandar a llamar funciones correctamente, pero lo que más se me complica estructurar y entender en este momento son las listas por comprensión.

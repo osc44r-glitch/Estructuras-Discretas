@@ -66,3 +66,22 @@ soloPares xs = [x | x <- xs, esParBit x]
 
 primos :: [Int] -> [Int]
 primos xs = [x | x <- xs, length [y | y <- [1..x], x `mod` y ==0] ==2]
+
+
+{-
+    Funcion: coprimos
+    Descripcion: recibe un entero y devuelve una lista de los coprimos de n
+    Uso: coprimos 10 arroja [1, 3, 7, 9]
+-}
+
+-- usare una funcion auxiliar llamada mcd (maximo comun divisor)
+
+{- Funcion auxiliar: mcd
+    Descripcion: Calcula el maximo comun divisor de dos enteros 
+-}
+
+mcd :: Int -> Int -> Int 
+mcd a b = if b == 0 then a else mcd b (a `mod` b)
+
+coprimos :: Int -> [Int]
+coprimos n = [x | x <- [1..n], mcd n x == 1]
