@@ -1,3 +1,4 @@
+import EsParBitModulo (esParBit)
 data Plazo = Dias Float | Meses Float deriving Show
 --Defino mi tipo de dato para el plazo
 
@@ -43,3 +44,25 @@ mensajesCetes vi (Dias n) =
 
 negativos :: [Int] -> Int
 negativos xs = length [x | x <- xs, x < 0]
+
+
+{-
+    Funcion: soloPares
+    Descripcion: devuelve una lista únicamente con los números pares usando la función importada esParBit.
+    Uso: soloPares [1, 2, 3, 4] arrojará [2, 4]
+-}
+
+soloPares :: [Int] -> [Int]
+soloPares xs = [x | x <- xs, esParBit x]
+
+
+
+
+{-
+    Funcion: primos
+    Descripcion: devuelve los primos de una lista.
+    Uso: primos [1..20] arroja [2, 3, 5, 7, 11, 13, 17, 19]
+-}
+
+primos :: [Int] -> [Int]
+primos xs = [x | x <- xs, length [y | y <- [1..x], x `mod` y ==0] ==2]
